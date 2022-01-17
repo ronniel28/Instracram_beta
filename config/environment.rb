@@ -10,7 +10,7 @@ ActionMailer::Base.smtp_settings = {
   port: '587',
   authentication: :plain,
   user_name: 'apikey',
-  password: Rails.application.credentials.dig(:sendgrid, :apikey),
+  password: Rails.application.credentials.sendgrid[:apikey],
   domain: 'instacram-beta.herokuapp.com',
   enable_starttls_auto: true
 }
