@@ -12,7 +12,7 @@ Rails.application.configure do
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: 'instacram-beta.herokuapp.com', :protocol => 'https' }
+  config.action_mailer.default_url_options = { host: 'instacram-beta.herokuapp.com' }
   config.action_mailer.smtp_settings = {
     user_name: Rails.application.credentials.sendmail[:username],
     password: Rails.application.credentials.sendmail[:password],
