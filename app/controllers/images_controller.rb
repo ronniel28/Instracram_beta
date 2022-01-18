@@ -3,7 +3,7 @@ class ImagesController < ApplicationController
 
   # GET /images or /images.json
   def index
-    @images = Image.all
+    @images = Image.where(user_id: current_user)
   end
 
   # GET /images/1 or /images/1.json

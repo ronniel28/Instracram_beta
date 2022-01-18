@@ -7,4 +7,5 @@ class User < ApplicationRecord
          :confirmable
 
   has_many :images
+  has_one :profile
 end

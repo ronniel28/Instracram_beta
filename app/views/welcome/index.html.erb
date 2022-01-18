@@ -1,5 +1,10 @@
 <% if current_user %>
-  <h3>Welcome: <%= current_user.email %></h3>
+  <% if current_user.profile.blank? %>
+    <h1>Edit Your Profile </h1>
+    <h3><%= link_to 'Edit profile', new_profile_path %>
+  <% else %>
+    <%= render 'welcome/profile' %>
+  <% end %>
 <% else %>
   <div class="jumbotron">
     <h2>Welcome to the Instacram!</h2>
@@ -7,6 +12,5 @@
       You'll love managing your Photos with our application. Sign up!
     </p>
   </div>
-
 
 <% end %>
