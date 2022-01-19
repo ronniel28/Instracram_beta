@@ -5,6 +5,6 @@ if Rails.env.production?
             aws_access_key_id: Rails.application.credentials.dig(:aws, :access_key_id),
             aws_secret_access_key: Rails.application.credentials.dig(:aws, :secret_access_key)
         }
-        config.fog_directory = instacram
+        config.fog_directory = "instacram"
     end
 end
