@@ -5,7 +5,7 @@
       <div class="panel">
           <div class="user-heading round">
               <a href="#">
-                  <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+              <%= image_tag(@profile.picture.url, size:"300x300", class: "css-style") if @profile.picture? %>
               </a>
               <h1><%= current_user.profile.first_name %> <%= current_user.profile.last_name %></h1>
               <p><%= current_user.email %></p>
