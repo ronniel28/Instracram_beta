@@ -4,9 +4,9 @@
   <div class="profile-nav col-md-3">
       <div class="panel">
           <div class="user-heading round">
-              <a href="#">
+             
               <%= image_tag(@profile.picture.url, size:"300x300", class: "css-style") if @profile.picture? %>
-              </a>
+             
               <h1><%= current_user.profile.first_name %> <%= current_user.profile.last_name %></h1>
               <p><%= current_user.email %></p>
           </div>
