@@ -31,6 +31,7 @@ gem 'figaro'
 gem 'carrierwave', '~> 2.0'
 gem "mini_magick"
 gem 'fog', '~> 2.2'
+gem 'aws-sdk'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
